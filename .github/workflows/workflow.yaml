@@ -30,6 +30,6 @@ jobs:
 
           docker version
 
-          docker build -t pydoc .
+          docker build -t kathambari611/pydoc .
       - name: checking after error
         run: echo testing after error execution
