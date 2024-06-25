@@ -37,6 +37,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Docker Push
-        run: docker push
+        run: docker push kathambari611/pydoc
           #      - name: checking after error
         #        run: echo testing after error execution
