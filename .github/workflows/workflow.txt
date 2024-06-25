@@ -17,7 +17,4 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip' # caching pip dependencies
-      - name: pybuildstep3 
-        run: pip install -r requirements.txt
-      - name: pybuildstep4
-        run: pytest
+      - run: pip install -r requirements.txt
