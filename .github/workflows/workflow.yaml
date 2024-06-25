@@ -22,5 +22,14 @@ jobs:
       - name: pybuildstep4
         run: pytest
         continue-on-error: true
+      - name: dockerbuild
+        uses: docker-practice/actions-setup-docker@master
+        timeout-minutes: 12
+      - run: |
+        set -x
+
+        docker version
+
+        docker run --rm hello-world
       - name: checking after error
         run: echo testing after error execution
