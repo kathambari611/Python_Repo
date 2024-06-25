@@ -21,3 +21,6 @@ jobs:
         run: pip install -r requirements.txt
       - name: pybuildstep4
         run: pytest
+        continue-on-error: true
+      - name: checking after error
+        run: echo testing after error execution
