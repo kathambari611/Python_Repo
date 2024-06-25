@@ -30,6 +30,6 @@ jobs:
 
           docker version
 
-          docker run --rm hello-world
+          docker build -t pydoc .
       - name: checking after error
         run: echo testing after error execution
