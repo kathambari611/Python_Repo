@@ -8,7 +8,7 @@ on:
 
 jobs:
   pybuildjob1:
-    runs-on: ubuntu-latest
+    runs-on: label1
     steps:
       - name: pybuildstep1
         uses: actions/checkout@v4
